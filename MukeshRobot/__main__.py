@@ -80,7 +80,7 @@ PM_START_TEXT = """
   {}
 ╰═💜══════════╯
 ╔━━❖❖💠❖❖━━╗ 
-     ᴀᴅɪsᴀ❤️
+         ᴀᴅɪsᴀ❤️
 ╚━━❖❖💠❖❖━━╝
 
 тнιѕ вσт σηℓу ƒσя мαηαgємєηт😊
@@ -94,32 +94,30 @@ PM_START_TEXT = """
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
-💚 Manage by [ᴅɪʟ](https://t.me/dil_sagar_121)
 
-        🖤─🧡─💛─💜
+💚 ᴍᴀᴅᴇ ᴡɪᴛʜ 💖 ʙʏ [ᴅɪʟ](https://t.me/dil_sagar_121)
+
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-    ], 
-    [
-        InlineKeyboardButton(text="help", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
-    [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ",
+            text="«« ᴀᴅᴅ ᴍᴇ »»",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
     ],
+    [
+        InlineKeyboardButton(text="ᴅᴇᴠs", url=f"tg://user?id={OWNER_ID}"),
+    ],
+    [
+        InlineKeyboardButton(text="ʟᴏᴠᴇ", callback_data="source_"),  
+    ],
+   # [
+ #       InlineKeyboardButton(text="📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
+ #   ],
     
 
 ]
