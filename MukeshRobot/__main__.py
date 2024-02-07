@@ -70,12 +70,12 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 PM_START_TEX = """
-ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
+ʀᴀᴍ ʀᴀᴍ `{}`, ʜᴏᴡ ʀ ᴜ \n💙💛 ᴡᴇ ғᴜʟғɪʟʟɪɴɢ ᴛʜᴇ ʟᴏᴠᴇ 💜♥️
 """
 
 
 PM_START_TEXT = """ 
-*ʜᴇʏ* {} , 🥀
+*ʀᴀᴍ ʀᴀᴍ* {} , 🚩
 *╭══════════💚═╮
   {}
 ╰═💜══════════╯
@@ -225,7 +225,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             
             x=update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAI33mLYLNLilbRI-sKAAob0P7koTEJNAAIOBAACl42QVKnra4sdzC_uKQQ")
+                "CAACAgUAAx0CbEz78AACuVFlwvbVD8SPLPJMchS-g_J4zYaZygACuwcAAii-qVa5oRFirLYglx4E")
             x.delete()
             usr = update.effective_user
             lol = update.effective_message.reply_text(
@@ -234,9 +234,9 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.4)
             lol.edit_text("❤")
             time.sleep(0.5)
-            lol.edit_text("⚡")
+            lol.edit_text("💙")
             time.sleep(0.3)
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
+            lol.edit_text("💜sᴘʀᴇᴀᴅɪɴɢ ʟᴏᴠᴇ...💛 ")
             time.sleep(0.4)
             lol.delete()
             
