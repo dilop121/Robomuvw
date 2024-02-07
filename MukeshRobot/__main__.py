@@ -49,8 +49,9 @@ from MukeshRobot.modules.helper_funcs.misc import paginate_modules
 
 def gib_repo_callback(update, context):
     query = update.callback_query
-    query.edit_message_media(
-        media=InputMediaVideo("https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", has_spoiler=True),
+    context.bot.send_video(
+        chat_id=query.message.chat_id,
+        video="https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4",
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(text="◁", callback_data="help_back")],
             [InlineKeyboardButton("Close", callback_data="close")]
