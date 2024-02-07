@@ -44,6 +44,25 @@ from MukeshRobot import (
 from MukeshRobot.modules import ALL_MODULES
 from MukeshRobot.modules.helper_funcs.chat_status import is_user_admin
 from MukeshRobot.modules.helper_funcs.misc import paginate_modules
+from pyrogram import filters
+from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, InputMediaVideo, CallbackQuery
+from MukeshRobot import pbot
+
+
+
+
+@pbot.on_callback_query(filters.regex("gib_source"))
+async def gib_repo_callback(_, callback_query):
+    await callback_query.edit_message_media(
+        media=InputMediaVideo("https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", has_spoiler=True),
+        reply_markup=InlineKeyboardMarkup(
+            [
+                    [
+                        InlineKeyboardButton(text="◁", callback_data="help_back"),
+                    ],
+                ]
+            ),
+    )
 
 
 def get_readable_time(seconds: int) -> str:
@@ -603,7 +622,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
             
             reply_markup=InlineKeyboardMarkup(
                 [[
-        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x4E\x6F\x6F\x62\x2D\x4D\x75\x6B\x65\x73\x68\x2F\x4D\x75\x6B\x65\x73\x68\x52\x6F\x62\x6F\x74")
+        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x4E\x6F\x6F\x62\x2D\x4D\x75\x6B\x65\x73\x68\x2F\x4D\x75\x6B\x65\x73\x68\x52\x6F\x62\x6F\x74"),InlineKeyboardButton(text="ᴀᴅɪsᴀ", callback_data="gib_source")
                 ],
                  [InlineKeyboardButton(text="◁", callback_data="source_back")]]
             ),
