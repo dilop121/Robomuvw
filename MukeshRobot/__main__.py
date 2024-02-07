@@ -425,7 +425,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="🏡 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs 🍷", url=f"68/x74/x74/x70/x73/x3a/x2f/x2f/x67/x69/x74/x68/x75/x62/x2e/x63/x6f/x6d/x2f/x73/x74/x6b/x65/x64/x69/x74/x7a"
+                            text="ᴜᴩᴅᴀᴛᴇs 🍷", url=f"http://github.com/stkeditz"
                         ),
                     ],
                     [
@@ -433,7 +433,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ 🍹", url="68/x74/x74/x70/x73/x3a/x2f/x2f/x67/x69/x74/x68/x75/x62/x2e/x63/x6f/x6d/x2f/x73/x74/x6b/x65/x64/x69/x74/x7a"
+                            text="ɢɪᴛʜᴜʙ 🍹", url="http://github.com/stkeditz"
                         ),
                     ],
                     [
@@ -606,17 +606,17 @@ def Source_about_callback(update: Update, context: CallbackContext):
 ᴀɴᴅ ᴜsɪɴɢ [sǫʟᴀʟᴄʜᴇᴍʏ](https://www.sqlalchemy.org) ᴀɴᴅ [ᴍᴏɴɢᴏ](https://cloud.mongodb.com) ᴀs ᴅᴀᴛᴀʙᴀsᴇ.
 
 
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](68/x74/x74/x70/x73/x3a/x2f/x2f/x67/x69/x74/x68/x75/x62/x2e/x63/x6f/x6d/x2f/x73/x74/x6b/x65/x64/x69/x74/x7a)
+*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](http://github.com/stkeditz)
 
 
-{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](68/x74/x74/x70/x73/x3a/x2f/x2f/x67/x69/x74/x68/x75/x62/x2e/x63/x6f/x6d/x2f/x73/x74/x6b/x65/x64/x69/x74/x7a).
+{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](http://github.com/stkeditz).
 © 2023 - 2024 | [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_CHAT}), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
 """,
             parse_mode=ParseMode.MARKDOWN,
             
             reply_markup=InlineKeyboardMarkup(
                 [[
-        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="68/x74/x74/x70/x73/x3a/x2f/x2f/x67/x69/x74/x68/x75/x62/x2e/x63/x6f/x6d/x2f/x73/x74/x6b/x65/x64/x69/x74/x7a"),InlineKeyboardButton(text="ᴀᴅɪsᴀ", callback_data="gib_source_")
+        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="http://github.com/stkeditz"),InlineKeyboardButton(text="ᴀᴅɪsᴀ", callback_data="gib_source_")
                 ],
                  [InlineKeyboardButton(text="◁", callback_data="source_back")]]
             ),
