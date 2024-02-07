@@ -53,8 +53,7 @@ def gib_repo_callback(update, context):
     video_url = "https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4"
     
     reply_markup = InlineKeyboardMarkup([
-        [InlineKeyboardButton(text="◁", callback_data="help_back")],
-        [InlineKeyboardButton("Close", callback_data="close")]
+        [InlineKeyboardButton(text="◁", callback_data="help_back")]
     ])
     
     context.bot.send_video(chat_id=chat_id, video=video_url, reply_markup=reply_markup)
