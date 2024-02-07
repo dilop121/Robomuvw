@@ -70,7 +70,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 PM_START_TEX = """
-ʀᴀᴍ ʀᴀᴍ `{}`, ʜᴏᴡ ʀ ᴜ \n💙💛 ᴡᴇ ғᴜʟғɪʟʟɪɴɢ ᴛʜᴇ ʟᴏᴠᴇ 💜♥️
+ʀᴀᴍ ʀᴀᴍ `{}`, ʜᴏᴡ ʀ ᴜ \n 💙💛 ᴡᴇ ғᴜʟғɪʟʟɪɴɢ ᴛʜᴇ ʟᴏᴠᴇ 💜♥️
 """
 
 
@@ -79,9 +79,8 @@ PM_START_TEXT = """
 *╭══════════💚═╮
   {}
 ╰═💜══════════╯
-╔━━❖❖💠❖❖━━╗ 
-         ᴀᴅɪsᴀ❤️
-╚━━❖❖💠❖❖━━╝
+
+🤍 ᴀᴅɪᴛɪ ɪ ʟᴏᴠᴇ ʏᴏᴜ sᴏ ᴍᴜᴄʜ ❤️
 
 тнιѕ вσт σηℓу ƒσя мαηαgємєηт😊
 
@@ -94,7 +93,6 @@ PM_START_TEXT = """
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
-
 💚 ᴍᴀᴅᴇ ᴡɪᴛʜ 💖 ʙʏ [ᴅɪʟ](https://t.me/dil_sagar_121)
 
 """
@@ -107,13 +105,11 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(text="ᴅᴇᴠs", url=f"tg://user?id={OWNER_ID}"),
-    ],
-    [
-        InlineKeyboardButton(text="ʟᴏᴠᴇ", callback_data="source_"),  
+        InlineKeyboardButton(text="ʟᴏᴠᴇ", callback_data="source_"),
     ],
    # [
  #       InlineKeyboardButton(text="📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
