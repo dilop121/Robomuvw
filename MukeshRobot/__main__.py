@@ -44,24 +44,17 @@ from MukeshRobot import (
 from MukeshRobot.modules import ALL_MODULES
 from MukeshRobot.modules.helper_funcs.chat_status import is_user_admin
 from MukeshRobot.modules.helper_funcs.misc import paginate_modules
-from pyrogram import filters
-from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, InputMediaVideo, CallbackQuery
-from MukeshRobot import pbot
 
 
 
-
-@pbot.on_callback_query(filters.regex("gib_source"))
-async def gib_repo_callback(_, callback_query):
-    await callback_query.edit_message_media(
+def gib_repo_callback(update, context):
+    query = update.callback_query
+    query.edit_message_media(
         media=InputMediaVideo("https://telegra.ph/file/b1367262cdfbcd0b2af07.mp4", has_spoiler=True),
-        reply_markup=InlineKeyboardMarkup(
-            [
-                    [
-                        InlineKeyboardButton(text="◁", callback_data="help_back"),
-                    ],
-                ]
-            ),
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton(text="◁", callback_data="help_back")],
+            [InlineKeyboardButton("Close", callback_data="close")]
+        ])
     )
 
 
@@ -1108,6 +1101,9 @@ def main():
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_", run_async=True
     )
+    adisa_callback_handler = CallbackQueryHandler(
+        gib_repo_callback, pattern=r"gib_source_", run_async=True
+    )
     music_callback_handler = CallbackQueryHandler(
         Music_about_callback, pattern=r"Music_",run_async=True
     )
@@ -1126,6 +1122,7 @@ def main():
     dispatcher.add_handler(donate_handler)
     dispatcher.add_handler(mukeshrobot_main_handler)
     dispatcher.add_error_handler(error_callback)
+    dispatcher.add_handler(adisa_callback_handler)
     dispatcher.add_handler(source_callback_handler)
     LOGGER.info("Using long polling.")
     updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True)
